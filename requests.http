@@ -1,9 +1,29 @@
-
-GET http://localhost:8080/saludo
-
+@subdominio=idat-ec02.onrender
 
 
+gET http://localhost:8080/saludo
+###
 
+GET https://{{subdominio}}.com/saludo
+
+
+###
+GET https://{{subdominio}}.com/saludo?name=Teodora
+
+
+###
+GET https://{{subdominio}}.com/demo/all
+
+###
+
+POST https://{{subdominio}}.com/demo/add
+Content-Type: application/x-www-form-urlencoded
+
+name=Teodora&email=Teodora@idat.edu.pe
+
+###
+DELETE https://{{subdominio}}.com/demo/del 
+Content-Type: application/x-www-form-urlencoded
 
 
 
